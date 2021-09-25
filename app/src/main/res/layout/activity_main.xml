@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".MainActivity">
+<include layout="@layout/toolbarlayout"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:padding="10sp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/bigimage"
+            android:layout_width="match_parent"
+            android:layout_height="400sp"
+            android:cropToPadding="true"
+            app:shapeAppearanceOverlay="@style/circular"
+            android:scaleType="centerCrop"
+            android:src="@drawable/arun" />
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10sp"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:text="Filters :"
+        android:layout_marginTop="10sp"
+        android:layout_marginBottom="7sp"
+        android:elevation="4sp"
+        android:textSize="30sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16sp"
+            >
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/filter1"
+                android:layout_width="wrap_content"
+                android:layout_height="100sp"
+                android:layout_weight="1.5"
+                android:layout_marginRight="10sp"
+                android:layout_marginLeft="10sp"
+                android:scaleType="centerCrop"
+                app:shapeAppearanceOverlay="@style/circular"
+                android:background="@drawable/ic_launcher_foreground" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/filter2"
+                android:layout_width="wrap_content"
+                android:layout_height="100sp"
+                android:layout_weight="1.5"
+                android:scaleType="centerCrop"
+                android:layout_marginRight="10sp"
+                app:shapeAppearanceOverlay="@style/circular"
+                android:background="@drawable/ic_launcher_foreground" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/filter3"
+                android:layout_width="wrap_content"
+                android:layout_height="100sp"
+                android:layout_weight="1.5"
+                android:layout_marginRight="10sp"
+                android:scaleType="centerCrop"
+                app:shapeAppearanceOverlay="@style/circular"
+                android:background="@drawable/ic_launcher_foreground" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/filter4"
+                android:layout_width="wrap_content"
+                android:layout_height="100sp"
+                android:layout_marginRight="10sp"
+                android:layout_weight="1.5"
+                app:shapeAppearanceOverlay="@style/circular"
+                android:scaleType="centerCrop"
+                android:background="@drawable/ic_launcher_foreground" />
+
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="150sp"
+            android:layout_height="40sp"
+            android:id="@+id/gallerybtn"
+            android:layout_marginTop="16sp"
+            android:text="select Image"
+            android:drawableStart="@drawable/gallerimg"
+            android:background="#FFAB40"
+            android:padding="10sp"
+            android:layout_gravity="center_horizontal"
+            />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
